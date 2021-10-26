@@ -1,3 +1,7 @@
+*{
+  /*background-color: #191F34;*/
+  font-family: Arial, Helvetica, sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -7,21 +11,85 @@
   pointer-events: none;
 }
 
+.main1{
+  background-color: #191F34;
+  height: 100vh;
+  min-height:100vh;
+}
+
+#inputamt{
+  background-color: rgb(23,31,49);
+  border-color: rgb(57, 62, 79);
+  color: white;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
+.heading1{
+  text-align: left;
+  color: #c5c5c5;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+.userid{
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  justify-content:center;
+}
+#userbadge{
+  background-color: rgba(8, 64, 177, 0) !important;
+  background-color: cutom-color;
+  border-color: rgba(109, 108, 108, 0.59) !important;
+  border-color: cutom-cor;
+}
+.jumbotron{
+  background: rgb(33,40,62) !important; 
+ color: white;
+ padding: 12px;
+ width: 75rem;
+ text-align: left;
+ border-radius: 6px;
+}
+.heading2{
+  font-weight: bold;
+}
+.forminput-1{
+  background_color: rgb(23,31,49);
+}
+#label1{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn-primary{
+  color: #fff;
+    background-color: rgb(8, 64, 177) !important;
+    background-color: cutom-color;
+    border-color: rgb(8, 64, 177) !important;
+    border-color: cutom-cor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
+  /*min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white;*/
 }
 
 .App-link {
