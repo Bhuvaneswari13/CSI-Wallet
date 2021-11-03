@@ -1,68 +1,76 @@
 import './App.css';
-import { Button, Container,Form,Col,Row } from 'react-bootstrap';
+import Dasbord from './components/Dasboard';
+import Dashboard_content from './components/Dashboard_content';
+import Direct from './components/Direct';
+import Addfunds from './components/addfunds';
+import Pendingdepo from './components/pendingdepo';
+import Transfer from './components/transfer';
+import WalletChange from './components/wallet_change';
+import ActivationWallet from './components/activation_wallet'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <div className="main1">
-      <Container>
-      <Row>
-    <Col>
-    <div className="heading1">
-       <h5>Welcome, seenivasan</h5>
-  </div>
-    </Col>
-    <Col className="userid">
-    <button id="userbadge" class="btn btn-primary">
-  UserId: <span class="badge badge-light">707123</span>
-</button>
-  </Col>
-  </Row>
-  <div class="jumbotron">
-  <h6 class="heading2">Add Funds to Your Activation Wallet</h6>
-  <br/>
-  <Container>
-  <form>
-    <div class="form-group row">
-    <label for="inputAmt" id="label1" class="col-sm-2 col-form-label">Enter Amount in (TRX) </label>
-    <div class="col-sm-10">
-      <input type="number" class="form-control" id="inputamt" placeholder=""/>
-    </div>
-  </div>
-</form>
-</Container>
-<br/>
-<div class="col-md-12 text-center">
-<Button type="button" class="btn btn-primary">Submit</Button>
-</div>
-<br/>
-<p class="heading4">Note: Once you press Submit, The system will show you the Tron Address to Transfer and the Required Amount of Trons to Transfer. Once you transfer,
-    your wallet will be loaded automatically after the required number of confirmations. It may take some time for confirmations.
-    Please send the exact amount of Coins shown in the next page</p>
-  
-</div>
-</Container>
+    <Router>
+       <Switch>
+          <Route path="/" exact>
+                 <div className='main-div'>
+                   <Dasbord/>
+                    <Dashboard_content/>
+                  </div>
+          </Route>
 
-</div>
-    </div>
+          <Route path="/Direct" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <Direct/>
+               </div>
+          </Route>
+
+          <Route path="/addfunds" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <Addfunds/>
+               </div>
+          </Route>
+
+          <Route path="/pendingdepo" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <Pendingdepo/>
+               </div>
+          </Route>
+          <Route path="/transfer" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <Transfer/>
+               </div>
+          </Route>
+          <Route path="/wallet-change" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <WalletChange/>
+               </div>
+          </Route>
+          <Route path="/activation-wallet" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <ActivationWallet/>
+               </div>
+          </Route>
+
+    </Switch>
+    </Router>
+ 
+  
   );
 }
 
 export default App;
-
-
-
-
-  {/* <img src={logo} className="App-logo" alt="logo" />
-        <p>   App-header
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>*/}
-       
