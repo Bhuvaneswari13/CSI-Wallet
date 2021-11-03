@@ -9,13 +9,12 @@ const ActivationWallet = () =>{
         
         <UpBar/>
 
-        <div className="container2">
-            <div className="first_contain2">
-            <div className="sub_first_contain2">
-                <div className="title_contain2">
+        <div className="container3">
+            <div className="first_contain3">
+            <div className="sub_first_contain3">
+                <div className="title_contain3">
                     <h3>Activation Wallet Report of 707123 (Balance - TRX 0.00) </h3>
                     <br/>
-                    
                     <table id="customers" >
   <tr>
     <th>Serial</th>
