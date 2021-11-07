@@ -110,11 +110,14 @@
   font-weight: 500;
   border: 1px solid #b9caed2e;
 }
-
 #customers3 td{
-  border:1px solid #b9caed2e;
+    border:1px solid #b9caed2e;
 }
-  
+  .badge-none{
+      background-color:#dfcfcf00;
+      color: #b9caed;
+      border:none;
+  }
   #customers3 th {
     padding-top: 12px;
     padding-bottom: 12px;
