@@ -1,7 +1,11 @@
+/* eslint-disable react/jsx-pascal-case */
 import './App.css';
 import Dasbord from './components/Dasboard';
 import Dashboard_content from './components/Dashboard_content';
 import Direct from './components/Direct';
+import Profile from './components/profile';
+import Tron_address from './components/tron_address';
+import Change_password from './components/change_password';
 import Addfunds from './components/addfunds';
 import Pendingdepo from './components/pendingdepo';
 import Transfer from './components/transfer';
@@ -12,8 +16,9 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from "react-router-dom";
+
 
 
 
@@ -34,7 +39,24 @@ function App() {
                <Direct/>
                </div>
           </Route>
-
+          <Route path="/profile" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <Profile/>
+               </div>
+          </Route>
+          <Route path="/tron_address" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <Tron_address/>
+               </div>
+          </Route>
+          <Route path="/change_password" exact>
+               <div className='main-div'>
+              <Dasbord/>
+               <Change_password/>
+               </div>
+          </Route>
           <Route path="/addfunds" exact>
                <div className='main-div'>
               <Dasbord/>
@@ -72,8 +94,6 @@ function App() {
                <CashWallet/>
                </div>
           </Route>
-
-
     </Switch>
     </Router>
  

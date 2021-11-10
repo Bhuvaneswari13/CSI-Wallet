@@ -7,7 +7,7 @@ export default function UpBar() {
         <div className='right-main'>
         <i class="fas fa-cog"></i>
          <i className="fab fa-twitter"></i>
-         <img className='pic' src='http://localhost:3000/ivan.jpg'/>
+         <img className='pic' src='http://localhost:3000/ivan.jpg' alt="logo"/>
         </div>
    </div>
     )

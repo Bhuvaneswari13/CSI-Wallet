@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React,{useState} from 'react'
 import classes from './Dasboard.module.css'
 import { Link} from "react-router-dom";
@@ -86,9 +88,9 @@ export default function Dasbord() {
                           <span className={classes.plus}>{HomeIsSelected ? <i class="fas fa-chevron-up"></i> : <i class="fas fa-chevron-down"></i>}</span>
                           <ul className={HomeClasses}>
                           <li><Link to="/"><i class="fas fa-chevron-right"></i> Dasboard</Link></li>
-                          <li><Link to="/"><i class="fas fa-chevron-right"></i> Profile</Link></li>
-                          <li><Link to="/"><i class="fas fa-chevron-right"></i> Update Tron Address</Link></li>
-                          <li><Link to="/"><i class="fas fa-chevron-right"></i> Change Password</Link></li>
+                          <li><Link to="/profile"><i class="fas fa-chevron-right"></i> Profile</Link></li>
+                          <li><Link to="/tron_address"><i class="fas fa-chevron-right"></i> Update Tron Address</Link></li>
+                          <li><Link to="/change_password"><i class="fas fa-chevron-right"></i> Change Password</Link></li>
                       </ul>
                       </a>
                 </li>
@@ -134,12 +136,12 @@ export default function Dasbord() {
                           <span>Wallet</span>
                           <span className={classes.plus}>{walletIsSelected ? <i class="fas fa-chevron-up"></i> : <i class="fas fa-chevron-down"></i>}</span>
                           <ul className={walletClasses}>
-                          <li><a href="#"><i class="fas fa-chevron-right"></i> Add Funds</a></li>
-                          <li><a href="#"><i class="fas fa-chevron-right"></i> Pending Deposits</a></li>
-                          <li><a href="#"><i class="fas fa-chevron-right"></i> Transfer</a></li>
-                          <li><a href="#"><i class="fas fa-chevron-right"></i> Wallet  Change</a></li>
-                          <li><a href="#"><i class="fas fa-chevron-right"></i> Activation Wallet</a></li>
-                          <li><a href="#"><i class="fas fa-chevron-right"></i> Cash Wallet</a></li>
+                          <li><Link to="/addfunds"><i class="fas fa-chevron-right"></i> Add Funds</Link></li>
+                           <li><Link to="/pendingdepo"><i class="fas fa-chevron-right"></i> Pending Deposits</Link></li>
+                                <li><Link to="/transfer"><i class="fas fa-chevron-right"></i> Transfer</Link></li>
+                                <li><Link to="/wallet-change"><i class="fas fa-chevron-right"></i> Wallet  Change</Link></li>
+                                <li><Link to="/activation-wallet"><i class="fas fa-chevron-right"></i> Activation Wallet</Link></li>
+                                <li><Link to="/cash-wallet"><i class="fas fa-chevron-right"></i> Cash Wallet</Link></li>
                           </ul>
                       </a>
                 </li>
